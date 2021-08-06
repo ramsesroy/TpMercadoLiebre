@@ -1,0 +1,77 @@
+.home header{
+    background-color: var(--color-amarillo);
+}
+/*search*/
+.home img#img-logo{
+    width: 150px;
+    margin: 30px;
+}
+.home input{
+    display: block;
+    color: var(--color-gris-claro);
+}
+.home #input{
+    margin-left: 20px;
+}
+/*promo*/
+.home #promo{
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 800;
+}
+/*menu*/
+.home nav ul{
+    margin-bottom: 20px;
+}
+.home nav li{
+    list-style: none;
+}
+.home nav li a{
+    color: black;
+    font-weight: 600;
+}
+.home .burger-menu {
+  display: flex;
+  justify-content: center;
+}
+.home .burger-menu i{
+   width: 15px;
+   padding: 10px;
+   margin-bottom: 20px;
+   color: white;
+   background-color: var(--color-celeste);
+}
+.home h3{
+    font-size: 24px;
+    
+}
+
+.home p{
+    font-size: 12px;
+}
+.home .precio{
+    font-size: 18px;
+}
+.home .descuentos{
+    font-size: 16px;
+}
+.home article h4{
+    font-size: 16px;
+}
+
+/*footer*/
+.home footer article{
+   text-align: center;
+   margin: 30px;
+   color: var(--color-azul);
+}
+
+.home footer p {
+    color: var(--color-azul);
+}
+
+.home footer article i{
+    color: var(--color-celeste);
+    width: 2em;
+    margin-bottom: 10px;
+}
