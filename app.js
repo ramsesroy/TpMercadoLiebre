@@ -1,17 +1,14 @@
-const express= require('express');
-const path=require('path');
-const app=express();
+const express = require('express');
+const app = express();
+const port= 3030;
+const path = require('path');
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+
+ 
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'views', 'home.html')));
+app.get('/register',(req,res) => res.sendFile(path.join(__dirname, 'views', 'register.html')));
+app.get('/login', (req,res) => res.sendFile(path.join(__dirname,'views', 'login.html')));
 
 
-const port=3000;
-const views=path.join(__dirname, 'views');
-
-app.listen(port,()=>
-    console.log(`Corriendo Servidor en puerto: ${port}`)
-);
-
-app.get('/',(req, res)=>
-    res.sendFile(path.join(views, 'home.html'))
-)
+app.listen(port, () => console.log(`Servidor corriendo en http://localhost:${port}`));
